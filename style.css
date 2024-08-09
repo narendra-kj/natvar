@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@font-face {
+  font-family: my font;
+  src: url(new.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accentcolor:#2294ed;
+    --accentcolor-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+.body{
+    font-family:"Oswald", sans-serif;
+    color: var(--primary-text-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+
+}
+ul{
+    list-style: none;
+}
+/*utility class*/
+h1{
+  font-size: 5rem;
+}
+p{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.9rem;
+}
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline:auto;
+    padding-inline:var(--padding-inline-section);
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    } 
+.hover-links{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-links:hover{
+    color:var(--accentcolor);
+}
+
+.primary-button{
+    background-color: var(--accentcolor);
+    border: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+.secondary-button{
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: var(--primary-text-color) !important;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+
+}
+.primary-button:hover{
+    background-color: var(--accentcolor-dark);
+}
+.secondary-button:hover{
+  border-color: var(--accentcolor);
+  color: var(--accentcolor) !important;
+}
+
+/*watsaap icon*/
+.watsaap_main{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.watsaap_img{
+  width: 50px;
+  border-radius: 5px;
+}
+/*top banner*/
+.top-banner{
+    
+    background: linear-gradient(#e66465, #9198e5);
+    background-size: 300px;
+}
+.banner-text{
+    color:black;
+    padding: 15px 30px;
+    text-align: center;
+
+}
+/*nav bar*/
+.main-nav{
+    margin-top: 10px;
+    justify-content: space-between;
+    
+}
+.company-logo img{
+    width: 200px;
+}
+.nav-links{flex-basis: 730px;}
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+.company-logo img{
+    width: 180PX;
+}
+/*main section*/
+.main-section{
+  margin-top: 20px;
+}
+.image-slider{
+  width: 100%;
+  height: 500px;
+  background-image: url(imagessss/home_slider_03_14824798020.jpg);
+  background-size: 100% 100%;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  animation: changeimage 20s linear infinite;
+  flex-direction: column;
+
+}
+@keyframes changeimage{
+  0%{
+    background-image: url(imagessss/muktinath-tour-image.jpg);
+  }
+  25%{
+    background-image: url(imagessss/England-Birmingham-travellight-shutterstock_1639027267-RFE-resized.avif);
+  }
+  50%{
+    background-image: url(imagessss/animal-8510775_1280.webp);
+  }
+  75%{
+    background-image: url(imagessss/Travel.jpg);
+  }
+  100%{
+    background-image: url(imagessss/home_slider_03_14824798020.jpg);
+  }
+}
+.image-slider h1{
+flex-direction: column;
+margin-top: 250px;
+font-family:my font;
+
+}
+.image-slider p{
+  margin-top: 10px;
+}
+.topic{
+  justify-content: center;
+  border: 10px;
+  
+}
+/*features-section*/
+.features-section{
+  padding: 80px var(--padding-inline-section) 0;
+  background-image: url(./images/assests.n.png);
+  margin-bottom: 30px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.features-header{
+  text-align: center;
+}
+.features-header h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.features-area{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 80px;
+}
+.features-card{
+  flex-direction: column;
+  gap: 20px;
+  max-width: 20%;
+  text-align: center;
+}
+.feature-img{
+  width: 380px;
+}
+.img1{
+  height: 210px;
+}
+.img2{
+  height: 230px;
+}
+.img3{
+  max-height:220px ;
+}
+.EXPLORE-MORE{
+  padding-top: 80PX;
+}
+/*about us*/
+.big-feature-section{
+  padding: 50px var(--padding-inline-section) 0;
+}
+.big-feature-container{
+  gap: 30px;
+  padding-bottom: 50PX;
+}
+.feature-img img{
+  width: 400px;
+}
+.feature-desc{
+  flex-direction: column;
+  align-items: flex-start;
+}
+/*special-features-section*/
+.special-features-section{
+  padding: 80px var(--padding-inline-section) 0;
+  background-image: url(./images/assests.n.png);
+  margin-bottom: 30px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.special-features-header{
+  text-align: center;
+}
+.special-features-header h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.special-features-area{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 40px;
+}
+.special-features-card{
+  flex-direction: column;
+  gap: 20px;
+  max-width: 20%;
+  text-align: center;
+  border: 0.5px solid black ;
+  transition: 0.2s ease-out;
+
+}
+.special-features-card:hover{
+  background-color:#577592;
+}
+.image1{
+  max-width: 100px;
+}
+.image2{
+max-width: 100px;
+}
+.image3{
+max-width: 95px;
+}
+.image4{
+  max-width: 100px;
+}
+/*footer*/
+footer{
+  padding-block: 80px;
+  background-color: #ebf2fa;
+}
+.company-logo{
+  width: 300px;
+}
+.link-coloum{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.footer-container{
+  align-items:flex-start ;
+  justify-content: space-between;
+  gap: 80px;
+}
+.info-list{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+}
+/*subfooter*/
+.subfooter{
+  background-color: #b9cde4;
+  padding:var(--padding-inline-section);
+
+}
+.subfooter-container{
+  justify-content: center;
+  gap: 30px;
+}
